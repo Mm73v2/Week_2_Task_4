@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html css refactor-code web landing-page" />
+    <meta name="description" content="simple website layout" />
+    <title>Complex Code</title>
+
+    <!-- Css Files -->
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+
+  <body>
+    <!-- Main Header -->
+    <header class="header text-center text-white py-10">
+      <h1>My Company</h1>
+    </header>
+    <!-- End Main Header -->
+
+    <!-- Navbar -->
+    <nav class="py-10 bg-primary">
+      <ul class="text-center">
+        <li><a class="text-white" href="#home">Home</a></li>
+        <li><a class="text-white" href="#services">Services</a></li>
+        <li><a class="text-white" href="#about">About</a></li>
+        <li><a class="text-white" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- Home Section -->
+      <section id="home" class="section mb-20">
+        <h2 class="mb-10">Welcome to Our Website</h2>
+        <p>This is the home section.</p>
+      </section>
+      <!-- End Home Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="section mb-20">
+        <h2 class="mb-10">Our Services</h2>
+        <div class="service shadow bg-white p-10">
+          <h3 class="mb-20">Web Design</h3>
+          <p>Beautiful and responsive web designs tailored to your needs.</p>
+        </div>
+        <div class="service shadow bg-white p-10">
+          <h3 class="mb-20">Development</h3>
+          <p>Full-stack web development solutions using modern technologies.</p>
+        </div>
+        <div class="service shadow bg-white p-10">
+          <h3 class="mb-20">SEO Optimization</h3>
+          <p>Boost your online presence with our SEO strategies.</p>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- About Section -->
+      <section id="about" class="section mb-20">
+        <h2 class="mb-10">About Us</h2>
+        <p>Learn about our team and our mission.</p>
+      </section>
+      <!-- End About Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="section mb-20">
+        <h2 class="mb-10">Contact Us</h2>
+        <form class="contact-form bg-white p-20 shadow">
+          <label for="name">Name:</label>
+          <input class="mb-10 p-10 w-100" type="text" id="name" name="name" />
+          <label for="email">Email:</label>
+          <input
+            class="mb-10 p-10 w-100"
+            type="email"
+            id="email"
+            name="email"
+          />
+          <label for="message">Message:</label>
+          <textarea
+            class="mb-10 p-10 w-100"
+            id="message"
+            name="message"
+          ></textarea>
+          <button class="bg-primary text-white" type="submit">
+            Send Message
+          </button>
+        </form>
+      </section>
+      <!-- End Contact Section -->
+
+      <!-- Image Gallery Section -->
+      <section id="gallery" class="section gallery text-center p-20 mb-20">
+        <h2 class="mb-10">Image Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item shadow bg-white p-10">
+            <img src="image1.jpg" alt="Image 1" />
+          </div>
+          <div class="gallery-item shadow bg-white p-10">
+            <img src="image2.jpg" alt="Image 2" />
+          </div>
+          <div class="gallery-item shadow bg-white p-10">
+            <img src="image3.jpg" alt="Image 3" />
+          </div>
+          <div class="gallery-item shadow bg-white p-10">
+            <img src="image4.jpg" alt="Image 4" />
+          </div>
+        </div>
+      </section>
+      <!-- End Image Gallery Section -->
+    </main>
+    <!-- END MAIN -->
+
+    <!-- Footer -->
+    <footer class="footer bg-primary text-white text-center py-10 w-100">
+      <p>&copy; 2024 My Company. All rights reserved.</p>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

@@ -1,0 +1,157 @@
+/* General Styles */
+
+:root {
+  --primary-color: #444;
+  --background-color: #f4f4f4;
+  --white-color: #fff;
+  --main-font: Arial, sans-serif;
+  --main-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --spacer-10: 10px;
+  --spacer-15: 15px;
+  --spacer-20: 20px;
+}
+
+/* Reset Elements Margins And Paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  padding: var(--spacer-20);
+}
+
+.section h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.section p {
+  line-height: 1.6;
+}
+
+/* Utility Classes For Common Styles */
+
+.mb-10 {
+  margin-bottom: var(--spacer-10);
+}
+
+.mb-20 {
+  margin-bottom: var(--spacer-20);
+}
+
+.p-10 {
+  padding: var(--spacer-10);
+}
+
+.p-20 {
+  padding: var(--spacer-20);
+}
+
+.py-10 {
+  padding-block: var(--spacer-10);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-white {
+  background-color: var(--white-color);
+}
+
+.text-white {
+  color: var(--white-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.shadow {
+  box-shadow: var(--main-shadow);
+}
+
+/* Sections Styles */
+
+.header {
+  background-color: #333;
+}
+
+.header h1 {
+  font-size: 2em;
+}
+
+nav ul,
+.service p,
+.footer p {
+  margin-block: 16px;
+}
+
+nav ul li {
+  display: inline;
+  margin-inline: var(--spacer-15);
+}
+
+.service {
+  margin: var(--spacer-10);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  padding: var(--spacer-10) var(--spacer-20);
+  border: none;
+  cursor: pointer;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacer-10);
+}
+
+.gallery-item img {
+  max-width: 100%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
